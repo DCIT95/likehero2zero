@@ -32,7 +32,7 @@ public class PublicCo2Bean implements Serializable {
         return null;
     }
 
-    // --- Getter und Setter passend zu index.xhtml ---
+    
     public String getSelectedCountry() {
         return selectedCountry;
     }
