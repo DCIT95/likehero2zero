@@ -18,7 +18,7 @@ public class User implements Serializable {
     private String passwordHash;
 
     @Column(nullable = false)
-    private String role; // z. B. "SCIENTIST"
+    private String role; // In dem Fall Wissenschaftler
 
     public User() {}
 
