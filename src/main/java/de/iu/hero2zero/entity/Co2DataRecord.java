@@ -19,7 +19,7 @@ public class Co2DataRecord implements Serializable {
     @Column(nullable = false, length = 3)
     private String countryCode;
 
-    // Maskiert "YEAR", damit H2 das reservierte Schlüsselwort korrekt interpretiert
+    
     @Column(name = "\"YEAR\"", nullable = false)
     private int year;
 
