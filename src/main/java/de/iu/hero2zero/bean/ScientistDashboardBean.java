@@ -28,7 +28,7 @@ public class ScientistDashboardBean implements Serializable {
 
     public String saveNewData() {
         try {
-            // Falls loginBean vorhanden und eingeloggt ist, nutzen wir diesen User, sonst Fallback
+          
             User loggedInUser = null;
             if (loginBean != null && loginBean.isLoggedIn()) {
                 loggedInUser = loginBean.getCurrentUser();
@@ -61,7 +61,7 @@ public class ScientistDashboardBean implements Serializable {
         }
     }
 
-    // --- Getter & Setter ---
+    //  Getter & Setter 
 
     public String getCountryName() {
         return countryName;
