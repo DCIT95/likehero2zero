@@ -57,7 +57,7 @@ public class PublicCo2Bean implements Serializable {
         this.selectedRecord = selectedRecord;
     }
 
-    // Von index.xhtml in Zeile 17 verlangt (currentRecord):
+    
     public Co2DataRecord getCurrentRecord() {
         return selectedRecord;
     }
