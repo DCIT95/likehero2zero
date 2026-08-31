@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Like Hero To Zero - CO2 Daten</title>
+</h:head>
+<h:body>
+    <h2>Öffentliche CO2-Datenabfrage</h2>
+    
+    <h:form>
+        <h:outputLabel for="country" value="Land eingeben (z. B. Germany): " />
+        <h:inputText id="country" value="#{publicCo2Bean.selectedCountry}" />
+        <h:commandButton value="Suchen" action="#{publicCo2Bean.searchCountry}" />
+    </h:form>
+
+    <h:panelGroup rendered="#{publicCo2Bean.currentRecord != null}">
+        <h3>Ergebnis für #{publicCo2Bean.currentRecord.countryName}:</h3>
+        <p><strong>Jahr:</strong> #{publicCo2Bean.currentRecord.year}</p>
+        <p><strong>CO2-Ausstoß:</strong> #{publicCo2Bean.currentRecord.co2EmissionKt} kt</p>
+    </h:panelGroup>
+    
+    <br/>
+    <h:link outcome="dashboard.xhtml" value="Zum Wissenschaftler-Dashboard" />
+</h:body>
+</html>

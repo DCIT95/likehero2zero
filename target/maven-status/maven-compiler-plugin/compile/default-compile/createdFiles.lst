@@ -1,0 +1,7 @@
+de\iu\hero2zero\bean\PublicCo2Bean.class
+de\iu\hero2zero\service\Co2DataService.class
+de\iu\hero2zero\bean\LoginBean.class
+de\iu\hero2zero\bean\ScientistDashboardBean.class
+de\iu\hero2zero\entity\User.class
+de\iu\hero2zero\filter\AuthenticationFilter.class
+de\iu\hero2zero\entity\Co2DataRecord.class
