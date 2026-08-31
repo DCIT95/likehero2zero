@@ -18,7 +18,7 @@ public class Co2DataService {
     public void saveRecord(Co2DataRecord record) {
         if (record.getCreatedBy() != null) {
             User user = record.getCreatedBy();
-            // Prüfen, ob User bereits existiert, sonst anlegen/mergen
+            
             List<User> existing = em.createQuery("SELECT u FROM User u WHERE u.username = :u", User.class)
                                     .setParameter("u", user.getUsername())
                                     .getResultList();
